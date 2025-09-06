@@ -11,6 +11,8 @@ else
 {
     console.log("failed")
 }
+
+//switch statement 
 let day = 1
 switch(day)
 {
@@ -33,13 +35,52 @@ switch(day)
     }
 
 }
+
+//while loop
 while (day<=7 && day>=1)
 {
     console.log("It is a weekday")
     console.log(day)
     day++
 }
+
+//for loop
 for(let i = 0;i<=7;i++)
 {
     console.log("Session : ",i)
+}
+
+//array
+let colors = ['red','white','black']
+for (let i = 0 ; i<=colors.length; i++)
+{
+    console.log(colors[i])
+}
+for(let color of colors)
+{
+    console.log(color)
+}
+
+//object declaration
+
+let person = {
+    name : "Sravya",
+    age:19,
+    session : 1,
+    attendance : 20
+}
+for(let i in person )
+{
+    console.log(`${i} : ${person[i]}`)
+}
+
+for (let i = 0 ;i<=3;i++)
+{
+    if(i==1)
+    {
+        continue;
+    }
+    else{
+        console.log("Vannakam ...")
+    }
 }
